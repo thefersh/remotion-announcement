@@ -80,3 +80,14 @@
   height: 100%;
   border-radius: 50%;
 }
+
+/* Spotify banner */
+.spotify {
+  width: 32.5%;
+  margin: 0 auto;
+}
+
+.spotify__img {
+  width: 100%;
+  height: auto;
+}
