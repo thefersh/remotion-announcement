@@ -6,8 +6,10 @@ import "./styles.css"
 export const MainScene = () => {
 	return (
 		<div className="main">
-			<ArtistLogo />
-			<Spotify />
+			<div className="main-container">
+				<ArtistLogo />
+				<Spotify />
+			</div>
 			<Player />
 		</div>
 	);

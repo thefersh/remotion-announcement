@@ -3,12 +3,23 @@
   background-color: #181818;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 74px;
 }
 
 /* Player */
 .player {
   background-color: #121212;
-  width: calc(100% - 124px);
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin: auto auto;
