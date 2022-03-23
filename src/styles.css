@@ -1,0 +1,66 @@
+.main{
+  color: #fff;
+  background-color: #181818;
+  width: 100%;
+  height: 100%;
+}
+
+/* Player */
+.player {
+  background-color: #121212;
+  width: calc(100% - 124px);
+  height: auto;
+  border-radius: 10px;
+  margin: auto auto;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.player-sing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-sing__container {
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.player-sing__name {
+  font-size: 4rem;
+  width: auto; /* 462px */
+  height: auto; /* 154px */
+  color: #ffffff;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.player-sing__album {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.player-sing__img {
+  width: auto;
+  height: 12.5rem;
+}
+
+.player-progress {
+  margin-top: 4rem;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #535353;
+  border-radius: 8px;
+}
+
+.player-progress > .player-progress__bar{
+  height: 100%;
+  border-radius: 8px;
+  background-color: #b3b3b3;
+}

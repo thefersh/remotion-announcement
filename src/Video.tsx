@@ -1,16 +1,19 @@
 import {Composition} from 'remotion';
-import {MyComposition} from './Composition';
+import {MainScene} from './Composition';
+
+const fps = 30
+const durationInSeconds = 10
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="Empty"
-				component={MyComposition}
-				durationInFrames={60}
-				fps={30}
-				width={1280}
-				height={720}
+				id="main"
+				component={MainScene}
+				durationInFrames={durationInSeconds * fps}
+				fps={fps}
+				width={1020}
+				height={1200}
 			/>
 		</>
 	);
