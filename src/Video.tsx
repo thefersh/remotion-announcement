@@ -2,7 +2,7 @@ import {Composition} from 'remotion';
 import {MainScene} from './Composition';
 
 const fps = 30
-const durationInSeconds = 150
+const durationInSeconds = 15
 
 export const RemotionVideo: React.FC = () => {
 	return (

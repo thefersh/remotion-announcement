@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 export const Player = (): JSX.Element => {
 	const [data, setData] = useState(0)
-	const { fps } = useVideoConfig()
+	const { fps, durationInFrames } = useVideoConfig()
 	const frame = useCurrentFrame()
 
 	const getDuration = useCallback(async () => {
@@ -18,11 +18,11 @@ export const Player = (): JSX.Element => {
     getDuration();
   }, []);
 
+	const volume = interpolate(frame, [durationInFrames - (3 *fps), durationInFrames], [1, 0], { extrapolateLeft: "clamp"})
+
   return (
 	<>
-		<Audio src={AudioMp3} volume={interpolate(frame, [0, 90], [0, 1], {
-          extrapolateLeft: "clamp",
-        })} />
+		<Audio src={AudioMp3} volume={volume} />
 		<div className="player">
 			<div className="player-sing">
 				<div className="player-sing__container">
